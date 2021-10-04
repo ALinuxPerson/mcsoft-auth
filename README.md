@@ -1,12 +1,12 @@
 # Authenticating to Minecraft with the Microsoft Authentication Scheme from Rust
-This binary showcases an implementation of the microsoft authentication scheme for Minecraft,
+This program showcases an implementation of the microsoft authentication scheme for Minecraft,
 written in Rust.
 
 # Requirements
 You need to obtain a client id and client secret by creating an [Azure application]. Steps on obtaining the client id and
 client secret will be seen in the next section.
 
-You will also need to provide a redirect uri. This binary assumes that you've set the redirect uri in Azure to be
+You will also need to provide a redirect uri. This program assumes that you've set the redirect uri in Azure to be
 `localhost`.
 
 A port is also needed. If the port isn't given or is invalid, it will try to parse it from the redirect uri. If it
@@ -106,15 +106,15 @@ Of course, replacing `REDACTED` with the real, respective values.
 
 # What this can't do
 
-This binary can't:
+This program can't:
   * Support skins.
   * Handle errors. If an error occurs while during one of the steps, you'll instead get an esoteric error message, 
     probably from serde complaining that it can't be parsed correctly.
 
 # Technical Information
 
-The technical information on how this binary works internally can be seen in the (unofficial) 
-[Microsoft Authentication Scheme] documentation, and also by looking at the source code of this binary.
+The technical information on how this program works internally can be seen in the (unofficial) 
+[Microsoft Authentication Scheme] documentation, and also by looking at the source code of this program.
 
 [Azure application]: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
 [Microsoft Authentication Scheme]: https://wiki.vg/Microsoft_Authentication_Scheme
