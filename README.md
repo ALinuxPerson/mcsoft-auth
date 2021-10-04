@@ -104,6 +104,13 @@ access_token=REDACTED username=REDACTED uuid=REDACTED
 
 Of course, replacing `REDACTED` with the real, respective values.
 
+# What this can't do
+
+This binary can't:
+  * Support skins.
+  * Handle errors. If an error occurs while during one of the steps, you'll instead get an esoteric error message, 
+    probably from serde complaining that it can't be parsed correctly.
+
 # Technical Information
 
 The technical information on how this binary works internally can be seen in the (unofficial) 
